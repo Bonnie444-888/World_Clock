@@ -2,8 +2,12 @@ body {
   background: #132743;
   color: #dfd3c3;
 }
+h1 {
+  text-align: center;
+}
 
 footer {
+  text-align: center;
   color: rgba(155, 155, 155, 0.8);
 }
 a {
