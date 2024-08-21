@@ -36,6 +36,9 @@ h2 {
   padding: 30px 0;
   border-bottom: 1px dashed #ffb5b5;
 }
+#windhoek {
+  border-bottom: 1px dashed #ffb5b5;
+}
 .city:last-child {
   border: none;
 }

@@ -22,6 +22,17 @@ function updateTime() {
       "h:mm:ss [<small>]A[</small>]"
     )}`;
   }
+  let buenosElement = document.querySelector("#buenos-aires");
+  if (buenosElement) {
+    let buenosDateElement = buenosElement.querySelector(".date");
+    let buenosTimeElement = buenosElement.querySelector(".time");
+    let buenosTime = moment().tz("America/Argentina/Buenos_Aires");
+
+    buenosDateElement.innerHTML = buenosTime.format("MMMM Do YYYY");
+    buenosTimeElement.innerHTML = `${buenosTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    )}`;
+  }
 }
 updateTime();
 setInterval(updateTime, 1000);
